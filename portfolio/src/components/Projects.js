@@ -1,22 +1,22 @@
 import image1 from '../1.jpg';
 import image2 from '../2.jpg';
 import styled from 'styled-components';
-import profile from '../profileimg.jpg';
+import project1img from '../image/projects/wallaby.PNG';
+import project2img from '../image/projects/todayAlcohol.PNG';
+
 import { useNavigate } from 'react-router-dom';
 import '../common.css';
 
 const projectList = [
     {
         id: 1,
-        name: 'project1',
-        image: image2,
-        href: 'http://www.naver.com',
+        name: 'Wallaby',
+        image: project1img,
     },
     {
         id: 2,
-        name: 'project2',
-        image: image1,
-        href: 'http://www.google.com',
+        name: 'TodaysAlcohol',
+        image: project2img,
     },
 ];
 
@@ -35,7 +35,9 @@ function ProjectsList({ name, image }) {
                     <img src={image}></img>
                     {/* </a> */}
                 </div>
-                <div>{name}</div>
+                <div className="imageInfo">
+                    <h1>{name}</h1>
+                </div>
             </div>
         </div>
     );
@@ -46,11 +48,7 @@ export default function Project() {
         <StyledHome>
             <div className="rest row" id="project">
                 <div className="project-text main-bg">
-                    <h3>
-                        Look at my work &
-                        <br />
-                        go lorem dum dmual duaiqv dlsa
-                    </h3>
+                    <h3>Projects</h3>
                 </div>
                 <div className="projectListContainer">
                     {projectList.map((item) => (
@@ -63,7 +61,7 @@ export default function Project() {
                         />
                     ))}
                 </div>
-                <div className="project-bot main-bg">sfd</div>
+                {/* <div className="project-bot main-bg"></div> */}
             </div>
         </StyledHome>
     );
@@ -102,34 +100,38 @@ const StyledHome = styled.section`
     .projectList {
         /* border-radius: 15px 15px 0 0; */
         margin-bottom: 0;
-        padding: 80px 40px;
-        padding-bottom: 20px;
-        border: 1px solid black;
+        margin: 10px;
+        /* padding: 80px 40px; */
+        /* padding-bottom: 20px; */
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: white;
     }
 
     .projectListContainer {
-        display: flex;
+        /* display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-around; */
         background-color: #e6eaee;
+        padding: 40px 80px;
+        display: flex;
+        border-radius: 0 0 10px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
 
         @media screen and (max-width: 768px) {
-            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
             text-align: center;
             margin: 0 auto;
             /* position: relative; */
         }
     }
-
-    /* .project-text,
-    .project-bot {
-        width: 50%;
-        @media screen and (max-width: 768px) {
-            width: 100%;
-            text-align: center;
-            margin: 0 auto;
-        }
-    } */
+    .image {
+        width: 240px;
+        height: 320px;
+    }
 
     .item {
         /* width: calc(50% - 20px); */
@@ -139,6 +141,10 @@ const StyledHome = styled.section`
         @media screen and (max-width: 768px) {
             /* position: relative; */
         }
+    }
+    .projectList:hover {
+        background-color: white;
+        color: #55e6a5;
     }
     /* 미디어쿼리 */
     h3 {

@@ -1,5 +1,6 @@
 import Header2 from './Header2';
 import ProjectsDetail from './ProjectsDetail';
+import ProjectDeatilList from './ProjectsDetail';
 import { useState } from 'react';
 
 export default function Layout2() {
@@ -8,7 +9,7 @@ export default function Layout2() {
     return (
         <>
             <Header2 toggle={toggle} setToggle={setToggle} />
-            <ProjectsDetail />
+            <ProjectDeatilList />
         </>
     );
 }

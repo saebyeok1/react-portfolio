@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import logo from '../1.jpg';
+import logo from '../image/projects/index.PNG';
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
 
@@ -12,7 +12,7 @@ export default function Header({ toggle, setToggle }) {
         <StyledHeader>
             <StyledNavLogo>
                 <a href="/">
-                    <img src={logo}></img>
+                    <img src={logo} className="logo"></img>
                 </a>
             </StyledNavLogo>
 
@@ -44,6 +44,10 @@ export default function Header({ toggle, setToggle }) {
 }
 
 const StyledHeader = styled.nav`
+    .logo {
+        width: 150px;
+        height: 80px;
+    }
     a {
         text-decoration: none;
     }
@@ -63,8 +67,8 @@ const StyledHeader = styled.nav`
 
 const StyledNavLogo = styled.div`
     img {
-        width: 150px;
-        height: 100px;
+        width: 100px;
+        height: 80px;
     }
 `;
 

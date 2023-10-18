@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import logo from '../1.jpg';
+import logo from '../image/projects/index.PNG';
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
 
@@ -18,20 +18,20 @@ export default function Header2({ toggle, setToggle }) {
 
             <StyledNavMMenu>
                 <a href="#1">
-                    <li>Project1</li>
+                    <li>Wallaby</li>
                 </a>
                 <a href="#2">
-                    <li>Project2</li>
+                    <li>TodaysAlcohol</li>
                 </a>
             </StyledNavMMenu>
 
             {toggle ? (
                 <StyledMenuNone>
                     <a href="#1">
-                        <li>1</li>
+                        <li>Wallaby</li>
                     </a>
                     <a href="#2">
-                        <li>2</li>
+                        <li>TodaysAlcohol</li>
                     </a>
                 </StyledMenuNone>
             ) : null}
@@ -44,6 +44,10 @@ export default function Header2({ toggle, setToggle }) {
 }
 
 const StyledHeader = styled.nav`
+    img {
+        width: 100px;
+        height: 80px;
+    }
     a {
         text-decoration: none;
     }

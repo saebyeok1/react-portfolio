@@ -1,6 +1,6 @@
 import profileimg from '../profileimg.jpg';
 import styled from 'styled-components';
-import { FaGithub, FaGoogle } from 'react-icons/fa';
+import { FaGithub, FaGoogle, FaBloggerB } from 'react-icons/fa';
 import '../common.css';
 
 export default function Profile() {
@@ -19,7 +19,7 @@ export default function Profile() {
                         </div>
                         {/* 프로필 텍스트 */}
                         <div class="info-text">
-                            <h3>bbyo</h3>
+                            <h3>김보영</h3>
                             {/* <p>FA</p> */}
                         </div>
                         {/* 프로필 SNS */}
@@ -30,14 +30,18 @@ export default function Profile() {
                             <a href="#">
                                 <FaGoogle className="faImg" />
                             </a>
-                            <a></a>
+                            <a href="https://velog.io/@szszszsz">
+                                <FaBloggerB className="faImg" />
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div className="bot-profile main-bg">
                     {/* 설명 텍스트 */}
                     <h1>
-                        Hello im <span style={{ color: '#55e6a5' }}>abc</span>.
+                        Hello, I'm{' '}
+                        <span style={{ color: '#55e6a5' }}>Kim BoYoung,</span>.
+                        <br />
                         Aspiring Back-end dev. Consequat ullamco laboris
                         occaecat eiusmod cillum exercitation.
                     </h1>
