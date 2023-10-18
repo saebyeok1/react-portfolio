@@ -1,0 +1,44 @@
+/* @import './utils.scss'; */
+
+section {
+    display: flex;
+    max-width: 1600px;
+    margin: auto;
+    margin-bottom: 50px;
+    /* padding: 20px; */
+    padding: 20px 60px;
+}
+
+.main-bg {
+    /* background-color: $main-color; */
+    background-color: #e6eaee;
+}
+
+.row {
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+        display: inline;
+    }
+}
+
+.rest {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2')
+        format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'omyu_pretty';
+}
