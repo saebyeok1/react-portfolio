@@ -1,4 +1,4 @@
-import profileimg from '../profileimg.jpg';
+import profileimg from '../image/profileimg.jpg';
 import styled from 'styled-components';
 import { FaGithub, FaGoogle, FaBloggerB } from 'react-icons/fa';
 import '../common.css';
@@ -39,11 +39,11 @@ export default function Profile() {
                 <div className="bot-profile main-bg">
                     {/* 설명 텍스트 */}
                     <h1>
-                        Hello, I'm{' '}
-                        <span style={{ color: '#55e6a5' }}>Kim BoYoung,</span>.
+                        안녕하세요, 저는{' '}
+                        <span style={{ color: '#55e6a5' }}>김보영</span>입니다,
                         <br />
-                        Aspiring Back-end dev. Consequat ullamco laboris
-                        occaecat eiusmod cillum exercitation.
+                        Front-End, Back-End 개발을 공부하고 있습니다. 주
+                        관심사는 Back-End 개발입니다.
                     </h1>
                 </div>
             </div>
@@ -52,6 +52,9 @@ export default function Profile() {
 }
 
 const StyledHome = styled.section`
+    .row {
+        max-width: 1200px;
+    }
     /* height: 100vh; */
 
     /* .rest {
@@ -121,7 +124,7 @@ const StyledHome = styled.section`
     }
 
     .bot-profile {
-        padding: 80px 15px;
+        padding: 110px 15px;
         border-radius: 0 0 100px 0;
         @media screen and (max-width: 768px) {
             border-radius: 0 0 15px 15px;

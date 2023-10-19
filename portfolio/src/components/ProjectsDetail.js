@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import profile from '../profileimg.jpg';
+import profile from '../image/profileimg.jpg';
 import project1img from '../image/projects/wallaby.PNG';
 import project2img from '../image/projects/todayAlcohol.PNG';
 

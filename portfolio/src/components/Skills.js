@@ -1,4 +1,3 @@
-import image2 from '../2.jpg';
 import htmlimg from '../image/front-end/html.png';
 import cssimg from '../image/front-end/css.png';
 import jsimg from '../image/front-end/javascript.png';
