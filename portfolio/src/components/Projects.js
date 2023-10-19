@@ -1,5 +1,3 @@
-import image1 from '../1.jpg';
-import image2 from '../2.jpg';
 import styled from 'styled-components';
 import project1img from '../image/projects/wallaby.PNG';
 import project2img from '../image/projects/todayAlcohol.PNG';

@@ -23,7 +23,7 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
-    "homepage": "http://saebyeok1.github.io/portfolio",
+    "homepage": ".",
     "eslintConfig": {
         "extends": [
             "react-app",
